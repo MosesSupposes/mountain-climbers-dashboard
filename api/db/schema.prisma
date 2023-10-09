@@ -22,7 +22,6 @@ model Stakeholder {
   organizationName        String?
   phoneNumber             String?
   website                 String?
-
   productVisionDocuments  ProductVisionDocument[] @relation("PVDStakeholders")
 }
 
@@ -33,6 +32,7 @@ model ProductVisionDocument {
   productName         String
   productDescription  String
   productManager      String          @default("Moses A. Samuel")
+  mission             String
   problemCore         String
   problemSideEffects  ProblemSideEffect[] 
   objectives          Objective[]
