@@ -11421,6 +11421,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gentype@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "gentype@npm:4.5.0"
+  bin:
+    gentype: gentype.exe
+  checksum: 0a68cb04403106dcebc8f2d002b7121030705fba285ac6820e7d4df03c99fb296a434cbea24c483b07fbd45df0c9a02984fd5a12ca4badd4d036becb5e50f4e1
+  languageName: node
+  linkType: hard
+
 "get-caller-file@npm:^2.0.1, get-caller-file@npm:^2.0.5":
   version: 2.0.5
   resolution: "get-caller-file@npm:2.0.5"
@@ -17380,6 +17389,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rescript@npm:^10.1.4":
+  version: 10.1.4
+  resolution: "rescript@npm:10.1.4"
+  bin:
+    bsc: bsc
+    bsrefmt: bsrefmt
+    bstracing: lib/bstracing
+    rescript: rescript
+  checksum: 2549750314c865beed52f3fe828ca653386c784e053e640e011ef8165594757702abfe080f4ead5b0c95c3f577b1dd98a3df937e8e5256d69bc6bb13c8e31124
+  languageName: node
+  linkType: hard
+
 "reselect@npm:^4.1.7":
   version: 4.1.8
   resolution: "reselect@npm:4.1.8"
@@ -17655,6 +17676,8 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@redwoodjs/core": 6.3.1
+    gentype: ^4.5.0
+    rescript: ^10.1.4
   languageName: unknown
   linkType: soft
 

@@ -1,0 +1,36 @@
+{
+  "name": "mountain-climbers-dashboard",
+  "version": "0.1.0",
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": [
+    {
+      "dir": "api",
+      "subdirs": true
+    },
+    {
+      "dir": "web",
+      "subdirs": true
+    },
+    {
+      "dir": "scripts",
+      "subdirs": true
+    }
+  ],
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "gentypeconfig": {
+    "language": "typescript",
+    "shims": {},
+    "generatedFileExtension": ".gen.tsx",
+    "module": "es6",
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  },
+  "suffix": ".bs.js"
+}
