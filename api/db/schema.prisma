@@ -16,8 +16,8 @@ generator client {
 //  =================================================== 
 
 model Stakeholder {
-  id                      Int       @id @default(autoincrement())
-  email                   String    @unique
+  id                      Int                     @id @default(autoincrement())
+  email                   String                  @unique
   fullName                String
   organizationName        String?
   phoneNumber             String?
@@ -27,11 +27,11 @@ model Stakeholder {
 
 
 model ProductVisionDocument {
-  id                  Int             @id @default(autoincrement()) 
-  stakeholders        Stakeholder[]   @relation("PVDStakeholders")
+  id                  Int                   @id @default(autoincrement()) 
+  stakeholders        Stakeholder[]         @relation("PVDStakeholders")
   productName         String
   productDescription  String
-  productManager      String          @default("Moses A. Samuel")
+  productManager      String                @default("Moses A. Samuel")
   mission             String
   problemCore         String
   problemSideEffects  ProblemSideEffect[] 
@@ -41,19 +41,19 @@ model ProductVisionDocument {
   codebaseLink        String?
   stagedProductUrl    String?
   deployedProductUrl  String?
-  createdAt           DateTime       @default(now())
-  updatedAt           DateTime       @updatedAt
+  createdAt           DateTime              @default(now())
+  updatedAt           DateTime              @updatedAt
 }
 
 model ProblemSideEffect {
-  id          Int     @id @default(autoincrement())
+  id          Int                   @id @default(autoincrement())
   description String
   pvd         ProductVisionDocument @relation(fields: [pvdId], references: [id])
   pvdId       Int
 }
 
 model Objective {
-  id          Int     @id @default(autoincrement())
+  id          Int                   @id @default(autoincrement())
   description String
   pvd         ProductVisionDocument @relation(fields: [pvdId], references: [id])
   pvdId       Int
