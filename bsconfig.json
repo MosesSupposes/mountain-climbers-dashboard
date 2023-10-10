@@ -22,6 +22,7 @@
     "module": "es6",
     "in-source": true
   },
+  "bs-dependencies": ["@rescript/react"],
   "gentypeconfig": {
     "language": "typescript",
     "shims": {},

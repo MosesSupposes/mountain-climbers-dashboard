@@ -7,6 +7,7 @@
     ]
   },
   "devDependencies": {
+    "@redwoodjs/cli-storybook": "6.3.1",
     "@redwoodjs/core": "6.3.1",
     "gentype": "^4.5.0",
     "rescript": "^10.1.4"
@@ -22,5 +23,8 @@
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@3.6.3",
+  "dependencies": {
+    "@rescript/react": "^0.11.0"
+  }
 }
